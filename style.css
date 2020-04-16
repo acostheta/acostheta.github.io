@@ -1,0 +1,10 @@
+body {
+    background-color: rgb(25, 33, 52);
+    font-family: georgia;
+}
+.container {
+    width: 85%;
+    padding: 5%;
+    margin: auto;
+    background-color: #fff;
+}
