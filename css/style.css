@@ -2,6 +2,12 @@ body {
     background-color: #192134;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.header {
+    background-color: #192134;
+    color:white;
+}
+
 h1 {
     font-family: georgia;
     font-weight: normal;
@@ -15,6 +21,8 @@ h2, h3, h4, h5, h6 {
     
 }
 
+
+
 .container {
     width: 85%;
     padding: 5%;
@@ -23,4 +31,13 @@ h2, h3, h4, h5, h6 {
 }
 a{
     font-family: tahoma;
+}
+
+.project-details {
+    width: 500px;
+    height: 200px;
+}
+
+.project-graph {
+    width: 200px:
 }
