@@ -9,30 +9,30 @@
 </head>
 <body>
     <div class="container">
-        <header id="header">
+        <header id="header" class="header">
             <div>
-                <figure>
+                <figure class="logo">
                     <img src="https://i.ibb.co/NmfLLNS/logotipo.png alt="logo" border="0" width="300px">
                 </figure>
                 <!-- <p> θ acostheta</p> -->
             </div>
             <nav class="navbar">
                <ul>
-                   <li><a href="#main">main</a></li>
+                   <li><a href="#main" class="link">main</a></li>
                </ul>
                <ul>
-                   <li><a href="#portfolio">portfolio</a></li>
+                   <li><a href="#portfolio" class="link" class="link">portfolio</a></li>
                </ul>
                <ul>
-                   <li><a href="#events">events</a></li>
+                   <li><a href="#events" class="link">events</a></li>
                </ul>
                <ul>
-                   <li><a href="#contact">contact</a></li>
+                   <li><a href="#contact" class="link">contact</a></li>
                </ul>
             </nav>
         </header>
         
-        <section id="main">
+        <section id="main" class="hero">
             <h1>
                 hi <br>
                 i'm <strong>acostheta</strong> <br>
@@ -41,24 +41,28 @@
             <img src="https://i.ibb.co/Tg8MM5r/Perfil.jpg" alt="Perfil" border="0" width="100px">
         </section>
 
-        <section id="portfolio">
+        <section id="portfolio" section="portfolio">
             <h2>portfolio (outstanding projects)</h2>
-            <article class="portafolio-item">
-                <h3>Platzi Video</h3>
-                <h6>React Native / React </h6>
-                <p><small><strong>date:</strong> 7/1/2020</small></p>
-                <p><small><strong>you can see it on:</strong> <a href="https://www.platzi.com/native">Platzi</a></small></p>
-             </article>
-        </section>
-        <section id="events">
-            <h2>more about my events</h2>
-            <article class="events-item">
-            <figure> 
-                <img src="https://i.ibb.co/kQwWwRc/baden-powell.jpg" alt="baden-powell" border="0" width="200px">            </figure>
-            <h3>Moot Nacional 2018</h3>
-            <p>I knew a few people, traveled to Choroní and it was fun.</p>
-            <a href="https://www.youtube.com/watch?v=J-buXoKaPAA">Go Choroní</a>
+            <article class="project">
+                <h3 class="project-title">Platzi Video</h3>
+                <h6 class="project-course">React Native / React </h6>
+                <p class="project-date"><small><strong>date:</strong> 7/1/2020</small></p>
+                <p class="project-url"><small><strong>you can see it on:</strong> <a href="https://www.platzi.com/native">Platzi</a></small></p>
             </article>
+            <figure class="project-image-label">
+                <img class="project-image" src="https://i.ibb.co/DzMSfm9/Whats-App-Image-2019-12-08-at-7-18-01-PM.jpg" alt="Whats-App-Image-2019-12-08-at-7-18-01-PM" width="150px">
+            </figure>
+        </article>
+    </section>
+    <section id="events">
+        <h2>more about my events</h2>
+        <article class="event">
+            <figure class="event-image-label"> 
+                <img class="event-image" src="https://i.ibb.co/kQwWwRc/baden-powell.jpg" alt="baden-powell" border="0" width="200px">
+            </figure>
+            <h3 class="event-title">Moot Nacional 2018</h3>
+            <p class="event-description">I knew a few people, traveled to Choroní and it was fun.</p>
+            <a class="event-url" href="https://www.youtube.com/watch?v=J-buXoKaPAA">Go Choroní</a>
         </section>
 
         <section id="contact">

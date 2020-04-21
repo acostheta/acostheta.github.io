@@ -1,10 +1,26 @@
 body {
     background-color: #192134;
-    font-family: georgia;
+    font-family: Arial, Helvetica, sans-serif;
 }
+h1 {
+    font-family: georgia;
+    font-weight: normal;
+    line-height: 1;
+    letter-spacing: -0.2px;
+    text-transform:none;
+    /*these properties are totally unrelevant for this project
+    I just put them there to remind their existence*/
+}
+h2, h3, h4, h5, h6 {
+    
+}
+
 .container {
     width: 85%;
     padding: 5%;
     margin: auto;
     background-color: #fff;
+}
+a{
+    font-family: tahoma;
 }
