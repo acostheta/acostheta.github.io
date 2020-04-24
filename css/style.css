@@ -1,15 +1,16 @@
 /* just body */
 body {
-    background-color: #192134;
+    
     font-family: Arial, Helvetica, sans-serif;
+    margin:0;
 }
 
-.container {
+/* .container {
     width: 85%;
     padding: 5%;
     margin: auto;
     background-color: #fff;
-}
+} */
 
 a{
     font-family: tahoma;
@@ -65,6 +66,7 @@ h1 strong {
 }
 
 .project {
+    background: white;
     border: 1px solid gray;
     margin: 10px;
     margin-bottom: 15px;
