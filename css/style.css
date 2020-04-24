@@ -1,27 +1,8 @@
+/* just body */
 body {
     background-color: #192134;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.header {
-    background-color: #192134;
-    color:white;
-}
-
-h1 {
-    font-family: georgia;
-    font-weight: normal;
-    line-height: 1;
-    letter-spacing: -0.2px;
-    text-transform:none;
-    /*these properties are totally unrelevant for this project
-    I just put them there to remind their existence*/
-}
-h2, h3, h4, h5, h6 {
-    
-}
-
-
 
 .container {
     width: 85%;
@@ -29,8 +10,65 @@ h2, h3, h4, h5, h6 {
     margin: auto;
     background-color: #fff;
 }
+
 a{
     font-family: tahoma;
+}
+
+/* Header stuffs */
+.header {
+    background-color: #192134;
+    color:white;
+}
+
+.header a {
+    text-decoration: none;
+    color:white;
+}
+
+h2, h3, h4, h5, h6 {
+    
+}
+
+/* hero */
+
+h1 {
+    font-family: georgia;
+    font-weight: normal;
+    color: #ffffffb4;
+    line-height: 1;
+    letter-spacing: -0.2px;
+    text-transform:none;
+    /*these properties are totally unrelevant for this project
+    I just put them there to remind their existence*/
+    width: 100%;
+    height: 100%;
+}
+
+h1 strong {
+    color: white;
+}
+
+.hero {
+    height: 300px;
+    background: url(https://i.ibb.co/Tg8MM5r/Perfil.jpg);
+    background-color: #192134;
+    background-size: 300px 350px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+/* projects section */
+
+.portfolio {
+    background-color: #626262;
+}
+
+.project {
+    border: 1px solid gray;
+    margin: 10px;
+    margin-bottom: 15px;
+    padding: 20px;
 }
 
 .project-details {
