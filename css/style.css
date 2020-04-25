@@ -5,12 +5,22 @@ body {
     margin:0;
 }
 
+figure {
+    margin: 0;
+}
+
 /* .container {
     width: 85%;
     padding: 5%;
     margin: auto;
     background-color: #fff;
 } */
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 a{
     font-family: tahoma;
@@ -20,13 +30,33 @@ a{
 .header {
     background-color: #192134;
     color:white;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
 }
+
+.navbar {height:inherit;
+}
+
+.header nav{
+    display: flex;
+    height: inherit;
+}
+
+.header nav ul {
+    height: inherit;
+    display:flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
 
 .header a {
     text-decoration: none;
     color:white;
+    height: inherit;
+    
 }
-
 h2, h3, h4, h5, h6 {
     
 }
@@ -44,6 +74,7 @@ h1 {
     I just put them there to remind their existence*/
     width: 100%;
     height: 100%;
+    margin: 0;
 }
 
 h1 strong {
@@ -53,10 +84,13 @@ h1 strong {
 .hero {
     height: 300px;
     background: url(https://i.ibb.co/Tg8MM5r/Perfil.jpg);
-    background-color: #192134;
+    background-color: maroon;
     background-size: 300px 350px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
+
 }
 
 /* projects section */
