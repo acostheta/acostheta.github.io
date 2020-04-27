@@ -36,6 +36,7 @@ header .logodiv {
     justify-content: flex-start;
     align-items: flex-start;
     flex-grow: 1;
+    height: inherit;
 }
 
 .header nav {
@@ -44,19 +45,23 @@ header .logodiv {
     align-items: center;
     justify-content: flex-end;
     margin-right: 5%;
+    height: inherit;
 }
 
 .header nav ul li {
     list-style: none;
+    height: inherit;
 }
 
 .header a {
     text-decoration: none;
     color:white;
+    height: inherit;
 }
 
 .header a:hover {
     text-decoration: underline;
+    height: inherit;
 }
 
 /* hero */
@@ -66,6 +71,7 @@ h1 {
     font-family: georgia;
     font-weight: normal;
     color: #ffffffb4;
+    font-size: 3rem;
     line-height: 1;
     letter-spacing: -0.2px;
     text-transform:none;
@@ -86,6 +92,9 @@ h1 strong {
     background-size: 300px 350px;
     background-repeat: no-repeat;
     background-position-x: right;
+    /* padding: 5%; */
+    display: flex;
+    align-items: center;
 }
 
 /* projects section */
