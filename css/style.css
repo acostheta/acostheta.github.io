@@ -21,14 +21,18 @@ a{
     background-color: #192134;
     color:white;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     position:fixed;
     top: 0;
     left: 0;
     z-index: 9999;
     width: 100%;
-    height: 100px;
+    height: 70px;
+}
+
+figure {
+    margin: 0;
 }
 
 header .logodiv {
@@ -44,15 +48,26 @@ header .logodiv {
     align-items: center;
     justify-content: flex-end;
     margin-right: 5%;
+    height: inherit;
+    
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .header nav ul li {
     list-style: none;
+    display: flex;
 }
 
 .header a {
     text-decoration: none;
     color:white;
+    display: flex;
+    padding: 0 10px;
 }
 
 .header a:hover {
