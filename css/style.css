@@ -5,22 +5,12 @@ body {
     margin-top: 100px;
 }
 
-figure {
-    margin: 0;
-}
-
 /* .container {
     width: 85%;
     padding: 5%;
     margin: auto;
     background-color: #fff;
 } */
-
-ol, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
 
 a{
     font-family: georgia;
@@ -38,8 +28,7 @@ a{
     left: 0;
     z-index: 9999;
     width: 100%;
-    height: 70px;
-    justify-content: space-between;
+    height: 100px;
 }
 
 header .logodiv {
@@ -47,58 +36,27 @@ header .logodiv {
     justify-content: flex-start;
     align-items: flex-start;
     flex-grow: 1;
-    height: inherit;
 }
 
 .header nav {
     font-size: 1.2rem;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     margin-right: 5%;
-    height: inherit;
 }
 
 .header nav ul li {
     list-style: none;
-    justify-content: space-between;
-    height: 60px;
-    height: inherit;
 }
-
-.navbar {height:inherit;
-}
-
-.header nav{
-    display: flex;
-    height: inherit;
-}
-
-.header nav ul {
-    height: inherit;
-    display:flex;
-    align-items: center;
-    padding: 0 10px;
-}
-
 
 .header a {
     text-decoration: none;
     color:white;
-    height: inherit;
 }
-
 
 .header a:hover {
     text-decoration: underline;
-}
-
-h2 {
-    color: blue;
-    font-family: Roboto, sans-serif;
-    text-transform: uppercase;
-    font-weight: bold;
-    height: inherit;
 }
 
 /* hero */
@@ -108,13 +66,13 @@ h1 {
     font-family: georgia;
     font-weight: normal;
     color: #ffffffb4;
-    font-size: 3rem;
     line-height: 1;
     letter-spacing: -0.2px;
-    text-decoration: none;
+    text-transform:none;
     /*these properties are totally unrelevant for this project
     I just put them there to remind their existence*/
-    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 h1 strong {
@@ -124,25 +82,22 @@ h1 strong {
 .hero {
     height: 300px;
     background: url(https://i.ibb.co/Tg8MM5r/Perfil.jpg);
-    background-color: maroon;
+    background-color: #192134;
     background-size: 300px 350px;
     background-repeat: no-repeat;
     background-position-x: right;
-    /* padding: 5%; */
-    display: flex;
-    align-items: center;
 }
 
 /* projects section */
 
 .portfolio {
-    background-color: #626262;
-    padding: 20px;
+    background-color: #626262;  
 }
 
 .project {
     background: white;
     border: 1px solid gray;
+    margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
 }
@@ -153,24 +108,23 @@ h1 strong {
 }
 
 .project-graph {
-    width: 200px;
+    width: 200px:
 }
 
-.footer {
-    background-color: #192134;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;
 
-}
 
-.footer img {
-    vertical-align: middle;
-}
+/* Media Queries  */
 
-.footer a{
-    text-decoration: none;
-    color: white;
-}
+@media screen and (max-width: 480px) {
+    .logodiv {
+        width: 60px;
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+
+  } 
