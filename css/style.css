@@ -5,12 +5,22 @@ body {
     margin-top: 100px;
 }
 
+figure {
+    margin: 0;
+}
+
 /* .container {
     width: 85%;
     padding: 5%;
     margin: auto;
     background-color: #fff;
 } */
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 a{
     font-family: georgia;
@@ -21,6 +31,7 @@ a{
     background-color: #192134;
     color:white;
     display: flex;
+<<<<<<< HEAD
     flex-direction: row;
     align-items: center;
     position:fixed;
@@ -48,15 +59,50 @@ header .logodiv {
 
 .header nav ul li {
     list-style: none;
+=======
+    justify-content: space-between;
+    height: 60px;
 }
+
+.navbar {height:inherit;
+}
+
+.header nav{
+    display: flex;
+    height: inherit;
+}
+
+.header nav ul {
+    height: inherit;
+    display:flex;
+    align-items: center;
+    padding: 0 10px;
+>>>>>>> learning
+}
+
 
 .header a {
     text-decoration: none;
     color:white;
+    height: inherit;
+    
 }
+<<<<<<< HEAD
 
 .header a:hover {
     text-decoration: underline;
+=======
+h2, h3, h4, h5, h6 {
+    
+>>>>>>> learning
+}
+
+h2 {
+    color: blue;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    
 }
 
 /* hero */
@@ -64,15 +110,14 @@ header .logodiv {
 
 h1 {
     font-family: georgia;
-    font-weight: normal;
-    color: #ffffffb4;
     line-height: 1;
     letter-spacing: -0.2px;
-    text-transform:none;
+    color: #ffffffb4;
+    font-weight: normal;
+    text-decoration: none;
     /*these properties are totally unrelevant for this project
     I just put them there to remind their existence*/
-    width: 100%;
-    height: 100%;
+    margin: 0;
 }
 
 h1 strong {
@@ -82,22 +127,29 @@ h1 strong {
 .hero {
     height: 300px;
     background: url(https://i.ibb.co/Tg8MM5r/Perfil.jpg);
-    background-color: #192134;
+    background-color: maroon;
     background-size: 300px 350px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
+
 }
 
 /* projects section */
 
 .portfolio {
+<<<<<<< HEAD
     background-color: #626262;  
+=======
+    background-color: #626262;
+    padding: 20px;
+>>>>>>> learning
 }
 
 .project {
     background: white;
     border: 1px solid gray;
-    margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
 }
@@ -111,6 +163,7 @@ h1 strong {
     width: 200px:
 }
 
+<<<<<<< HEAD
 
 
 /* Media Queries  */
@@ -128,3 +181,23 @@ h1 strong {
     }
 
   } 
+=======
+.footer {
+    background-color: #192134;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+
+}
+
+.footer img {
+    vertical-align: middle;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+>>>>>>> learning
