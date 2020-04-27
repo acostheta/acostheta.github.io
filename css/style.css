@@ -61,6 +61,14 @@ h2, h3, h4, h5, h6 {
     
 }
 
+h2 {
+    color: blue;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
 /* hero */
 
 h1 {
@@ -95,12 +103,12 @@ h1 strong {
 
 .portfolio {
     background-color: #626262;
+    padding: 20px;
 }
 
 .project {
     background: white;
     border: 1px solid gray;
-    margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
 }
