@@ -158,7 +158,55 @@ h1 strong {
 }
 
 .project-graph {
-    width: 200pxM
+    width: 200px;
+}
+
+/* EVENTS */
+
+.event-list {
+    display: flex;
+}
+
+.event {
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-details {
+    margin: 20px;
+    margin-top: -40px;
+    background-color: #fff;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description {
+    text-align: left;
+}
+
+.event-url {
+    border: 1px solid #056fff;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
+    font-family: Manrope;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.event-announcer {
+    margin-left: 20px;
 }
 
 .footer {
