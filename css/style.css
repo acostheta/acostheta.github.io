@@ -16,6 +16,19 @@ a{
     font-family: georgia;
 }
 
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Manrope', 'sans-serif', Tahoma;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+h3, h4, h5, h6 {
+    font-family: Manrope;
+}
+
 /* Header stuffs */
 .header {
     background-color: #192134;
@@ -111,7 +124,8 @@ h1 strong {
 /* projects section */
 
 .portfolio {
-    background-color: #626262;  
+    background-color: #fafafa; 
+    padding: 20px;
 }
 
 .project {
@@ -120,15 +134,31 @@ h1 strong {
     margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project-course, .project-date, .project-url {
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 16px;
 }
 
 .project-details {
     width: 500px;
-    height: 200px;
 }
 
 .project-graph {
-    width: 200px:
+    width: 200pxM
 }
 
 .footer {
