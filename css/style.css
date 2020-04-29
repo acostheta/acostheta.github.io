@@ -3,21 +3,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
     margin-top: 100px;
+    background-color: #192134;
 }
 
-/* .container {
+.container {
     width: 85%;
-    padding: 5%;
-    margin: auto;
+    margin: 0 auto;
     background-color: #fff;
-} */
+}
 
 a{
     font-family: georgia;
 }
 
 h2 {
-    color: #026fff;
+    color: #B01A37;
     text-transform: uppercase;
     font-family: 'Manrope', 'sans-serif', Tahoma;
     font-weight: bold;
@@ -107,7 +107,7 @@ h1 {
 }
 
 h1 strong {
-    color: white;
+    color: #fff;
 }
 
 .hero {
@@ -196,10 +196,10 @@ h1 strong {
 }
 
 .event-url {
-    border: 1px solid #056fff;
+    border: 1px solid #B01A37;
     padding: 5px 20px;
     text-decoration: none;
-    color: #056fff;
+    color: #B01A37;
     font-family: Manrope;
     font-weight: bold;
     border-radius: 5px;
@@ -212,7 +212,7 @@ h1 strong {
 /* CONTACT */
 
 .contact {
-    background-color: #056fff;
+    background-color: #B01A37;
     color: white;
     height: 150px;
     display:flex;
@@ -230,6 +230,7 @@ h1 strong {
     height: 50px;
     border: 1px solid blue;
     background-size: 50px 50px;
+    margin: 0 10px;
 }
 
 .social-link.twitter {
@@ -250,6 +251,7 @@ h1 strong {
 
 .form-email input {
     border-color: gray;
+    padding: 5px 20px 5px 25px;
     border-radius: 5px;
     border-style: solid ;
 }
@@ -259,10 +261,9 @@ h1 strong {
     margin-top: 10px;
     background: transparent;
     color: white;
-    padding: 5px 30px;
+    padding: 5px 0;
     border-radius: 5px;
-    
-
+    width: 100px;
 }
 
 
