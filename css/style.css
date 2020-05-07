@@ -8,6 +8,7 @@ body {
 
 .container {
     width: 85%;
+    max-width: 1000px;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -34,6 +35,7 @@ h3, h4, h5, h6 {
     background-color: #192134;
     color:white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;    
     position:fixed;
@@ -119,6 +121,7 @@ h1 strong {
 
 .hero-wrapper {
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -146,6 +149,7 @@ h1 strong {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project-title {
@@ -228,6 +232,7 @@ h1 strong {
     color: white;
     height: 150px;
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding-left: 10px;
@@ -283,6 +288,7 @@ h1 strong {
     display:flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer a {
@@ -295,18 +301,20 @@ h1 strong {
     width: 100px;
 }
 
-/* Media Queries  */
+/* Media Queries DESKTOP-FIRST  */
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
 
 @media screen and (max-width: 480px) {
-    .logodiv {
-        width: 60px;
-    }
     
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;   
-    }
+}
 
-  } 
+@media screen and (max-width: 320px) {
+    
+} 
