@@ -161,11 +161,16 @@ h1 strong {
 }
 
 .project-details {
-    width: 500px;
+    width: 50%;
 }
 
-.project-graph {
-    width: 200px;
+.project-image-label {
+    width: 50%;
+    text-align: right;
+}
+
+.project-image-label img {
+    max-width: 100%;
 }
 
 /* EVENTS */
@@ -306,6 +311,9 @@ h1 strong {
     .container {
         width: 100%;
     }
+
+    /* HEADER */
+
     .header {
         display: block;
         height: auto;
@@ -330,10 +338,78 @@ h1 strong {
         justify-content: center;
         align-items: center;
     }
+
+    /* PORTFOLIO */
+
+    
+    .project {
+        display: block;
+    }
+
+    .project-image-label {
+        width: auto;
+        text-align: center;
+    }
+
+    .project-course, .project-date, .project-url {
+        margin: .4px 0;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .project-details{ 
+        width: auto;
+        font: 16px;
+    }
+
+    h2, .project-title {
+        font-size: 1.5em;
+    }
+
+    .project-url {
+        font-size: .8em;
+    }
+    .project-course {
+        font-size: 1.2em;
+    }
+    .project-date {
+        font-size: 1em;
+    }
+    .project-description {
+
+    }
+
 }
 
 @media screen and (max-width: 480px) {
-    
+    .project-details{ 
+        width: auto;
+        font-size: 12px;
+    }
+
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .project-title {
+        font-size: 1.5em;
+    }
+
+    .project-url {
+        font-size: .8em;
+    }
+    .project-course {
+        font-size: 1.2em;
+    }
+    .project-date {
+        font-size: 1em;
+    }
+    .project-description {
+        font-size: 1em;
+    }
 }
 
 @media screen and (max-width: 320px) {
