@@ -302,8 +302,42 @@ h1 strong {
 
 /* Media Queries DESKTOP-FIRST  */
 
+
+
 @media screen and (max-width: 1024px) {
-    
+
+
+}
+
+@media screen and (max-width: 906px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .h1wrapper {
+        display: flex;
+    }
+
+    h1 {
+        text-align: center;
+        padding: 0.5em;
+        line-height: 1.2em;
+    }
+
+    .img-wrapper{
+        display: flex;
+        padding: 0.5em;
+        border: 2px solid white;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -341,7 +375,6 @@ h1 strong {
 
     /* PORTFOLIO */
 
-    
     .project {
         display: block;
     }
@@ -381,7 +414,7 @@ h1 strong {
 
     }
 
-    /* AUTO */
+    /* EVENT */
 
     .event {
         width: auto;
@@ -399,6 +432,13 @@ h1 strong {
 }
 
 @media screen and (max-width: 480px) {
+    
+    
+    h1 {
+        font-size: 1em;
+    }
+    
+    
     .project-details{ 
         width: auto;
         font-size: 12px;
