@@ -22,7 +22,7 @@ export const ui = {
     'about.body1':
       'Desarrollador Móvil especializado en Flutter con sólida experiencia en metodologías de desarrollo acelerado asistido por Inteligencia Artificial Generativa. Dirijo agentes avanzados de IA (Gemini, DeepSeek, GLM) para la co-creación rápida de código, arquitectura de sistemas, refactorización y diagnóstico de errores en tiempo real.',
     'about.body2':
-      'Complementado con un trasfondo en QA Analyst (Alaxatech) y Project Management (Platzi Specialist), aplico rigurosos casos de prueba para verificar y autoevaluar mi propio código, entregando productos altamente estables, escalables y con mínimos errores a producción.',
+      'Complementado con un trasfondo como QA Analyst y mi especialidad como Project Manager. Me desenvuelvo en el planteamiento de objetivos y pasos a seguir para llevar una forma de trabajo con estructura y trazabilidad, fácil de adaptar a imprevistos y nuevas solicitudes.',
     'about.stack': 'Stack tecnológico',
 
     'services.title': 'Servicios',
@@ -69,7 +69,7 @@ export const ui = {
     'about.body1':
       'Mobile Developer specialized in Flutter with solid experience in accelerated development methodologies assisted by Generative AI. I direct advanced AI agents (Gemini, DeepSeek, GLM) for rapid code co-creation, system architecture, refactoring and real-time bug diagnosis.',
     'about.body2':
-      'Complemented by a background as QA Analyst (Alaxatech) and Project Management (Platzi Specialist), I apply rigorous test cases to verify and self-evaluate my own code, delivering highly stable, scalable products with minimal errors to production.',
+      'Complemented by a background as QA Analyst and my specialization as Project Manager. I focus on defining goals and the steps to follow to build a structured, traceable way of working that is easy to adapt to unforeseen events and new requests.',
     'about.stack': 'Tech stack',
 
     'services.title': 'Services',
