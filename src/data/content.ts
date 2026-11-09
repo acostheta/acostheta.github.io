@@ -159,22 +159,56 @@ export const experience: Record<Locale, Job[]> = {
   ],
 };
 
-export const stack = [
-  'Flutter',
-  'Dart',
-  'Riverpod',
-  'Supabase',
-  'Firebase',
-  'Google AppSheet',
-  'Gemini',
-  'DeepSeek',
-  'GLM',
-  'QA & Testing',
-  'Scrum',
-  'ClickUp',
-  'Trello',
-  'Notion',
-  'Git / GitHub',
-  'Linux',
-  'Docker',
-];
+export interface StackGroup {
+  label: string;
+  items: string[];
+}
+
+export const techStack: Record<Locale, StackGroup[]> = {
+  es: [
+    {
+      label: 'Programación',
+      items: ['Dart / Flutter', 'JS / React', 'PHP', 'Java'],
+    },
+    {
+      label: 'Herramientas',
+      items: [
+        'OpenCode',
+        'Antigravity',
+        'Docker',
+        'Firebase',
+        'Supabase',
+        'Google Workspace',
+        'Microsoft Office',
+        'Google AppSheet',
+      ],
+    },
+    {
+      label: 'Metodologías',
+      items: ['Kanban', 'Scrum', 'Waterfall'],
+    },
+  ],
+  en: [
+    {
+      label: 'Programming',
+      items: ['Dart / Flutter', 'JS / React', 'PHP', 'Java'],
+    },
+    {
+      label: 'Tools',
+      items: [
+        'OpenCode',
+        'Antigravity',
+        'Docker',
+        'Firebase',
+        'Supabase',
+        'Google Workspace',
+        'Microsoft Office',
+        'Google AppSheet',
+      ],
+    },
+    {
+      label: 'Methodologies',
+      items: ['Kanban', 'Scrum', 'Waterfall'],
+    },
+  ],
+};

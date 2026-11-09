@@ -1,5 +1,5 @@
 ---
-import { stack } from '../data/content';
+import { techStack } from '../data/content';
 import { t, type Locale } from '../i18n/ui';
 
 interface Props {
@@ -12,23 +12,29 @@ const { lang } = Astro.props;
 <section id="about" class="border-b border-line bg-white">
   <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
     <h2 class="text-3xl font-extrabold text-ink">{t(lang, 'about.title')}</h2>
-    <div class="mt-8 grid gap-10 md:grid-cols-2">
-      <div class="space-y-4 leading-relaxed text-graphite">
-        <p>{t(lang, 'about.body1')}</p>
-        <p>{t(lang, 'about.body2')}</p>
-      </div>
-      <div>
-        <h3 class="mb-4 text-lg font-bold text-ink">{t(lang, 'about.stack')}</h3>
-        <ul class="flex flex-wrap gap-2">
-          {
-            stack.map((tech) => (
-              <li class="border border-line bg-cloud px-3 py-1.5 text-sm font-medium text-ink">
-                {tech}
-              </li>
-            ))
-          }
-        </ul>
-      </div>
+    <div class="mt-6 max-w-3xl space-y-4 leading-relaxed text-graphite">
+      <p>{t(lang, 'about.body1')}</p>
+      <p>{t(lang, 'about.body2')}</p>
+    </div>
+
+    <h3 class="mb-6 mt-12 text-lg font-bold text-ink">{t(lang, 'about.stack')}</h3>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        techStack[lang].map((group) => (
+          <div>
+            <h4 class="mb-3 border-b border-line pb-2 text-sm font-bold uppercase tracking-wide text-graphite">
+              {group.label}
+            </h4>
+            <ul class="flex flex-wrap gap-2">
+              {group.items.map((item) => (
+                <li class="border border-line bg-cloud px-3 py-1.5 text-sm font-medium text-ink">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
     </div>
   </div>
 </section>
