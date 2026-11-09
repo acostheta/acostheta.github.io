@@ -23,13 +23,36 @@ const facts = [
     <div class="mt-8 grid gap-10 md:grid-cols-3">
       <div class="md:col-span-2">
         <p class="leading-relaxed text-graphite">{t(lang, 'about.body1')}</p>
+
         <div class="mt-6 border-l-4 border-royal bg-cloud p-5">
           <p class="leading-relaxed text-ink">{t(lang, 'about.body2')}</p>
+        </div>
+
+        <div class="mt-8 border-t border-line pt-6">
+          <h3 class="text-sm font-bold uppercase tracking-wide text-graphite">
+            {t(lang, 'about.stack')}
+          </h3>
+          <dl class="mt-4 space-y-5">
+            {
+              techStack[lang].map((group) => (
+                <div>
+                  <dt class="text-sm font-bold text-ink">{group.label}</dt>
+                  <dd class="mt-2 flex flex-wrap gap-2">
+                    {group.items.map((item) => (
+                      <span class="border border-line bg-cloud px-3 py-1 text-sm font-medium text-ink">
+                        {item}
+                      </span>
+                    ))}
+                  </dd>
+                </div>
+              ))
+            }
+          </dl>
         </div>
       </div>
 
       <aside class="md:col-span-1">
-        <div class="border border-line bg-cloud p-6">
+        <div class="border border-line bg-cloud p-6 md:sticky md:top-20">
           <h3 class="text-sm font-bold uppercase tracking-wide text-graphite">
             {t(lang, 'about.facts')}
           </h3>
@@ -47,26 +70,6 @@ const facts = [
           </dl>
         </div>
       </aside>
-    </div>
-
-    <h3 class="mb-6 mt-14 text-lg font-bold text-ink">{t(lang, 'about.stack')}</h3>
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      {
-        techStack[lang].map((group) => (
-          <div>
-            <h4 class="mb-3 border-b border-line pb-2 text-sm font-bold uppercase tracking-wide text-graphite">
-              {group.label}
-            </h4>
-            <ul class="flex flex-wrap gap-2">
-              {group.items.map((item) => (
-                <li class="border border-line bg-cloud px-3 py-1.5 text-sm font-medium text-ink">
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))
-      }
     </div>
   </div>
 </section>
