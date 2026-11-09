@@ -1,0 +1,81 @@
+---
+import { projects } from '../data/projects';
+import { t, type Locale } from '../i18n/ui';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const items = projects[lang];
+---
+
+<section id="portfolio" class="border-b border-line bg-cloud">
+  <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
+    <h2 class="text-3xl font-extrabold text-ink">{t(lang, 'portfolio.title')}</h2>
+    <p class="mt-2 text-graphite">{t(lang, 'portfolio.subtitle')}</p>
+
+    <div class="mt-10 space-y-8">
+      {
+        items.map((p) => (
+          <article class="grid overflow-hidden border border-line bg-white md:grid-cols-5">
+            <div
+              class="flex items-center justify-center p-10 md:col-span-2"
+              style={`background-color:${p.imageBg ?? '#f0eee9'}`}
+            >
+              {p.image ? (
+                <img
+                  src={p.image}
+                  alt={`${p.name}`}
+                  loading="lazy"
+                  class="max-h-40 w-auto object-contain"
+                />
+              ) : (
+                <span class="text-6xl font-extrabold text-royal">θ</span>
+              )}
+            </div>
+
+            <div class="p-6 md:col-span-3 md:p-8">
+              <div class="flex flex-wrap items-center gap-3">
+                <h3 class="text-2xl font-extrabold text-ink">{p.name}</h3>
+                {p.live && (
+                  <span class="border border-royal px-2 py-0.5 text-xs font-bold uppercase tracking-wider text-royal">
+                    {t(lang, 'project.live')}
+                  </span>
+                )}
+              </div>
+              <p class="mt-1 text-sm font-medium text-graphite">{p.tagline}</p>
+              <p class="mt-4 text-[15px] leading-relaxed text-graphite">{p.description}</p>
+
+              <ul class="mt-4 grid gap-1.5 sm:grid-cols-2">
+                {p.highlights.map((h) => (
+                  <li class="flex gap-2 text-sm leading-relaxed text-graphite">
+                    <span class="mt-2 h-1.5 w-1.5 shrink-0 bg-royal" />
+                    <span>{h}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <ul class="mt-5 flex flex-wrap gap-1.5">
+                {p.technologies.map((tech) => (
+                  <li class="border border-line bg-cloud px-2 py-0.5 text-xs font-medium text-ink">
+                    {tech}
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-6 inline-block bg-royal px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-royal-dark"
+              >
+                {t(lang, 'portfolio.see')} {p.urlLabel} →
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

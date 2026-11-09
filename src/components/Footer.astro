@@ -1,0 +1,21 @@
+---
+import { t, type Locale } from '../i18n/ui';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+---
+
+<footer class="bg-ink text-cloud/80">
+  <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-4 py-8 sm:flex-row sm:px-6">
+    <p class="text-sm">
+      {t(lang, 'footer.note')}{' '}
+      <a href="https://github.com/acostheta" class="font-bold text-white transition-colors hover:text-royal">
+        @acostheta
+      </a>
+    </p>
+    <p class="text-xs text-cloud/50">© 2026 Luis Acosta</p>
+  </div>
+</footer>

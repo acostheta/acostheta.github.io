@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta — estilo plano */
+  --color-cloud: #f0eee9; /* Cloud Dancer (Pantone 11-4201) */
+  --color-royal: #4169e1; /* Azul rey */
+  --color-royal-dark: #2f52c4; /* variante para texto pequeño (contraste AA) */
+  --color-ink: #1b1b1b; /* negro suave */
+  --color-graphite: #555555; /* grafito */
+  --color-line: #ded9d0; /* gris claro (bordes/separadores) */
+
+  --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cloud font-sans text-ink antialiased;
+  }
+
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
+
+  ::selection {
+    background-color: var(--color-royal);
+    color: #ffffff;
+  }
+}

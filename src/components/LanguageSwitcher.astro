@@ -1,0 +1,20 @@
+---
+import type { Locale } from '../i18n/ui';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const other = lang === 'es' ? 'en' : 'es';
+const href = `/${other}/`;
+const label = other === 'es' ? 'ES' : 'EN';
+---
+
+<a
+  href={href}
+  class="ml-1 inline-flex items-center border border-cloud/30 px-2.5 py-1 text-xs font-extrabold uppercase tracking-widest text-cloud transition-colors hover:border-royal hover:text-royal"
+  aria-label={`${label}`}
+>
+  {label}
+</a>

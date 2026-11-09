@@ -1,0 +1,41 @@
+---
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { t, type Locale } from '../i18n/ui';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+
+const nav = [
+  { key: 'nav.about', href: '#about' },
+  { key: 'nav.services', href: '#services' },
+  { key: 'nav.experience', href: '#experience' },
+  { key: 'nav.portfolio', href: '#portfolio' },
+  { key: 'nav.contact', href: '#contact' },
+] as const;
+---
+
+<header class="sticky top-0 z-50 border-b border-white/10 bg-ink text-cloud">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6">
+    <div class="flex flex-col gap-2 py-3 md:flex-row md:items-center md:justify-between">
+      <a href="#main" class="text-xl font-extrabold tracking-tight text-cloud">
+        <span class="text-royal">θ</span> acostheta
+      </a>
+      <nav class="-mx-1 flex flex-wrap items-center gap-1" aria-label="main">
+        {
+          nav.map((item) => (
+            <a
+              href={item.href}
+              class="px-3 py-2 text-sm font-medium text-cloud/80 transition-colors hover:text-white"
+            >
+              {t(lang, item.key)}
+            </a>
+          ))
+        }
+        <LanguageSwitcher lang={lang} />
+      </nav>
+    </div>
+  </div>
+</header>
