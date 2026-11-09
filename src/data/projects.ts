@@ -10,6 +10,7 @@ export interface Project {
   imageBg?: string;
   technologies: string[];
   highlights: string[];
+  badge?: string;
   live: boolean;
 }
 
@@ -22,6 +23,7 @@ export const projects: Record<Locale, Project[]> = {
         'Plataforma empresarial para contratistas que construyen caballerizas, establos y naves Post-Frame. Cubre el flujo completo: cálculo paramétrico de estructuras, lista de materiales (BOM), presupuestos y facturas en PDF, gestión de clientes, seguimiento de obra, cuentas por pagar y nómina de cuadrillas.',
       url: 'https://polebarns-crm-demo.web.app',
       urlLabel: 'la demo',
+      badge: 'DEMO',
       image: '/img/polebarns-screenshot.png',
       imageBg: '#F9FAFB',
       technologies: [
@@ -70,6 +72,7 @@ export const projects: Record<Locale, Project[]> = {
         'Enterprise platform for contractors building pole barns, stables and post-frame structures. Covers the full workflow: parametric structural estimation, bill of materials (BOM), PDF quotes and invoices, client management, project tracking, accounts payable and crew payroll.',
       url: 'https://polebarns-crm-demo.web.app',
       urlLabel: 'the live demo',
+      badge: 'DEMO',
       image: '/img/polebarns-screenshot.png',
       imageBg: '#F9FAFB',
       technologies: [
