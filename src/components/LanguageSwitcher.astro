@@ -7,7 +7,8 @@ interface Props {
 
 const { lang } = Astro.props;
 const other = lang === 'es' ? 'en' : 'es';
-const href = `/${other}/`;
+// El español vive en la raíz ("/") y el inglés en "/en/".
+const href = other === 'es' ? '/' : '/en/';
 const label = other === 'es' ? 'ES' : 'EN';
 ---
 

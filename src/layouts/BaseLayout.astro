@@ -11,7 +11,9 @@ interface Props {
 }
 
 const { lang, title, description } = Astro.props;
-const canonical = Astro.site ? new URL(Astro.url.pathname, Astro.site).href : Astro.url.pathname;
+// El español canónico vive en la raíz ("/") y el inglés en "/en/".
+const canonicalPath = lang === 'en' ? '/en/' : '/';
+const canonical = Astro.site ? new URL(canonicalPath, Astro.site).href : canonicalPath;
 ---
 
 <!doctype html>
