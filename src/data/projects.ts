@@ -7,7 +7,6 @@ export interface Project {
   url: string;
   urlLabel: string;
   image?: string;
-  imageBg?: string;
   technologies: string[];
   highlights: string[];
   live: boolean;
@@ -22,8 +21,7 @@ export const projects: Record<Locale, Project[]> = {
         'Plataforma web para publicar artículos, poesía, narrativa y galería de imágenes y videos de la comunidad de la Universidad de Oriente. Incluye autenticación, comentarios, reacciones y un backoffice de administración con roles y moderación de contenido.',
       url: 'https://literudo.online',
       urlLabel: 'literudo.online',
-      image: '/img/literudo-logo.png',
-      imageBg: '#f5eee6',
+      image: '/img/literudo-screenshot.png',
       technologies: ['Next.js 15', 'React 19', 'TypeScript', 'MUI', 'Supabase', 'TipTap'],
       highlights: [
         'Publicación de artículos, poesía y ensayos',
@@ -43,8 +41,7 @@ export const projects: Record<Locale, Project[]> = {
         'Web platform to publish articles, poetry, narrative and an image and video gallery from the Universidad de Oriente community. Includes authentication, comments, reactions and an admin backoffice with roles and content moderation.',
       url: 'https://literudo.online',
       urlLabel: 'literudo.online',
-      image: '/img/literudo-logo.png',
-      imageBg: '#f5eee6',
+      image: '/img/literudo-screenshot.png',
       technologies: ['Next.js 15', 'React 19', 'TypeScript', 'MUI', 'Supabase', 'TipTap'],
       highlights: [
         'Publishing of articles, poetry and essays',
