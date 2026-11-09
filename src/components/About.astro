@@ -7,69 +7,40 @@ interface Props {
 }
 
 const { lang } = Astro.props;
-
-const facts = [
-  { label: t(lang, 'about.role'), value: t(lang, 'about.roleValue') },
-  { label: t(lang, 'about.location'), value: t(lang, 'about.locationValue') },
-  { label: t(lang, 'about.languages'), value: t(lang, 'about.languagesValue') },
-  { label: t(lang, 'about.focus'), value: t(lang, 'about.focusValue') },
-];
 ---
 
 <section id="about" class="border-b border-line bg-white">
   <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6">
     <h2 class="text-3xl font-extrabold text-ink">{t(lang, 'about.title')}</h2>
 
-    <div class="mt-8 grid gap-10 md:grid-cols-3">
-      <div class="md:col-span-2">
-        <p class="leading-relaxed text-graphite">{t(lang, 'about.body1')}</p>
+    <p class="mt-6 max-w-3xl text-lg leading-relaxed text-ink sm:text-xl">
+      {t(lang, 'about.body1')}
+    </p>
 
-        <div class="mt-6 border-l-4 border-royal bg-cloud p-5">
-          <p class="leading-relaxed text-ink">{t(lang, 'about.body2')}</p>
-        </div>
+    <div class="mt-6 max-w-3xl border-l-4 border-royal bg-cloud px-5 py-4">
+      <p class="leading-relaxed text-graphite">{t(lang, 'about.body2')}</p>
+    </div>
 
-        <div class="mt-8 border-t border-line pt-6">
-          <h3 class="text-sm font-bold uppercase tracking-wide text-graphite">
-            {t(lang, 'about.stack')}
-          </h3>
-          <dl class="mt-4 space-y-5">
-            {
-              techStack[lang].map((group) => (
-                <div>
-                  <dt class="text-sm font-bold text-ink">{group.label}</dt>
-                  <dd class="mt-2 flex flex-wrap gap-2">
-                    {group.items.map((item) => (
-                      <span class="border border-line bg-cloud px-3 py-1 text-sm font-medium text-ink">
-                        {item}
-                      </span>
-                    ))}
-                  </dd>
-                </div>
-              ))
-            }
-          </dl>
-        </div>
-      </div>
-
-      <aside class="md:col-span-1">
-        <div class="border border-line bg-cloud p-6 md:sticky md:top-20">
-          <h3 class="text-sm font-bold uppercase tracking-wide text-graphite">
-            {t(lang, 'about.facts')}
-          </h3>
-          <dl class="mt-4 space-y-4">
-            {
-              facts.map((fact) => (
-                <div>
-                  <dt class="text-xs font-semibold uppercase tracking-wide text-graphite">
-                    {fact.label}
-                  </dt>
-                  <dd class="mt-1 text-sm font-medium text-ink">{fact.value}</dd>
-                </div>
-              ))
-            }
-          </dl>
-        </div>
-      </aside>
+    <div class="mt-12">
+      <h3 class="text-sm font-bold uppercase tracking-wide text-graphite">
+        {t(lang, 'about.stack')}
+      </h3>
+      <dl class="mt-4 border-t border-line">
+        {
+          techStack[lang].map((group) => (
+            <div class="grid gap-2 border-b border-line py-4 sm:grid-cols-[170px_1fr] sm:items-start">
+              <dt class="text-sm font-bold text-ink sm:pt-1.5">{group.label}</dt>
+              <dd class="flex flex-wrap gap-2">
+                {group.items.map((item) => (
+                  <span class="border border-line bg-cloud px-3 py-1 text-sm font-medium text-ink">
+                    {item}
+                  </span>
+                ))}
+              </dd>
+            </div>
+          ))
+        }
+      </dl>
     </div>
   </div>
 </section>

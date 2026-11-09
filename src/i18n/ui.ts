@@ -24,15 +24,6 @@ export const ui = {
     'about.body2':
       'Complementado con un trasfondo como QA Analyst y mi especialidad como Project Manager. Me desenvuelvo en el planteamiento de objetivos y pasos a seguir para llevar una forma de trabajo con estructura y trazabilidad, fácil de adaptar a imprevistos y nuevas solicitudes.',
     'about.stack': 'Stack tecnológico',
-    'about.facts': 'Ficha rápida',
-    'about.role': 'Rol',
-    'about.roleValue': 'Desarrollador Mobile · QA · Project Manager',
-    'about.location': 'Ubicación',
-    'about.locationValue': 'Maturín, Monagas, Venezuela',
-    'about.languages': 'Idiomas',
-    'about.languagesValue': 'Español (nativo) · Inglés profesional',
-    'about.focus': 'Enfoque',
-    'about.focusValue': 'Entrega rápida, estructurada y trazable',
 
     'services.title': 'Servicios',
     'services.subtitle': 'Lo que puedo hacer por tu proyecto',
@@ -80,15 +71,6 @@ export const ui = {
     'about.body2':
       'Complemented by a background as QA Analyst and my specialization as Project Manager. I focus on defining goals and the steps to follow to build a structured, traceable way of working that is easy to adapt to unforeseen events and new requests.',
     'about.stack': 'Tech stack',
-    'about.facts': 'Quick facts',
-    'about.role': 'Role',
-    'about.roleValue': 'Mobile Developer · QA · Project Manager',
-    'about.location': 'Location',
-    'about.locationValue': 'Maturín, Monagas, Venezuela',
-    'about.languages': 'Languages',
-    'about.languagesValue': 'Spanish (native) · Professional English',
-    'about.focus': 'Focus',
-    'about.focusValue': 'Fast, structured and traceable delivery',
 
     'services.title': 'Services',
     'services.subtitle': 'What I can do for your project',
