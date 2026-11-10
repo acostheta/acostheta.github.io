@@ -77,7 +77,7 @@ export const projects: Record<Locale, Project[]> = {
       name: 'Literudo',
       tagline: 'Blog y galería de la Agrupación Estudiantil Literudo',
       description:
-        'La Agrupación Estudiantil Literudo publicaba sus textos y fotos dispersos en redes. Este blog les dio un espacio propio para artículos, poesía y galería, con comentarios, reacciones y panel de administración. Hecho con Next.js, React y Supabase (auth y base de datos con RLS).',
+        'Literudo es una agrupación estudiantil recién creada que quería darse a conocer en la universidad y mostrarse como un espacio para promover la literatura: un poco de arte en una universidad científica. El blog es el punto de encuentro donde los escritores muestran su talento. Hecho con Next.js, React y Supabase (auth y base de datos con RLS).',
       url: 'https://literudo.online',
       urlLabel: 'literudo.online',
       image: '/img/literudo-screenshot.png',
@@ -155,7 +155,7 @@ export const projects: Record<Locale, Project[]> = {
       name: 'Literudo',
       tagline: 'Blog and gallery of the Literudo Student Group',
       description:
-        'The Literudo Student Group published its texts and photos scattered across social media. This blog gave them their own space for articles, poetry and a gallery, with comments, reactions and an admin panel. Built with Next.js, React and Supabase (auth and database with RLS).',
+        'Literudo is a newly formed student group that wanted to make itself known at the university and present itself as a space to promote literature: a bit of art in a science-driven university. The blog is where writers meet to showcase their talent. Built with Next.js, React and Supabase (auth and database with RLS).',
       url: 'https://literudo.online',
       urlLabel: 'literudo.online',
       image: '/img/literudo-screenshot.png',
