@@ -23,7 +23,13 @@
   }
 
   section[id] {
-    scroll-margin-top: 4.5rem;
+    scroll-margin-top: 7rem;
+  }
+
+  @media (min-width: 768px) {
+    section[id] {
+      scroll-margin-top: 4.5rem;
+    }
   }
 
   ::selection {

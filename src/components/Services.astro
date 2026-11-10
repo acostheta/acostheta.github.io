@@ -21,7 +21,7 @@ const icons: Record<string, string> = {
     <h2 class="text-3xl font-extrabold text-ink">{t(lang, 'services.title')}</h2>
     <p class="mt-2 text-graphite">{t(lang, 'services.subtitle')}</p>
 
-    <div class="mt-10 grid gap-6 md:grid-cols-3">
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {
         services[lang].map((s) => (
           <article class="border border-line bg-white p-6">

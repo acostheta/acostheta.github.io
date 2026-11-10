@@ -20,7 +20,7 @@ const items = projects[lang];
         items.map((p) => (
           <article class="grid overflow-hidden border border-line bg-white md:grid-cols-5">
             <figure
-              class="relative aspect-[4/5] w-full overflow-hidden border-b border-line md:col-span-2 md:aspect-auto md:border-b-0 md:border-r"
+              class="relative h-80 w-full overflow-hidden border-b border-line sm:h-96 md:col-span-2 md:h-auto md:border-b-0 md:border-r"
               style={`background-color:${p.imageBg ?? '#F5EEE6'}`}
             >
               {p.image ? (
