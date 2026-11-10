@@ -17,6 +17,35 @@ export interface Project {
 export const projects: Record<Locale, Project[]> = {
   es: [
     {
+      name: 'Truck Manager',
+      tagline: 'Sistema de gestión para talleres de vehículos pesados',
+      description:
+        'Demo de un sistema integral para talleres de camiones y flotas: dashboard con ventas y márgenes, clientes y vehículos, órdenes de trabajo tipo kanban, estimaciones y facturas en PDF, inventario, técnicos y control de accesos por roles. Funciona sin backend con datos ficticios.',
+      url: 'https://truck-manager-demo.web.app',
+      urlLabel: 'la demo',
+      badge: 'DEMO',
+      image: '/img/truck-manager-screenshot.png',
+      imageBg: '#FFFFFF',
+      technologies: [
+        'Flutter',
+        'Dart',
+        'Riverpod',
+        'GoRouter',
+        'Supabase',
+        'PDF',
+        'fl_chart',
+        'Firebase',
+      ],
+      highlights: [
+        'Dashboard con ventas, gastos, margen y gráficos',
+        'Clientes, flotas y órdenes de trabajo (kanban)',
+        'Estimaciones y facturas en PDF',
+        'Inventario, técnicos y control de accesos',
+        'Demo sin backend con datos ficticios',
+      ],
+      live: true,
+    },
+    {
       name: 'PoleBarns CRM',
       tagline: 'CRM + ERP para construcción de estructuras Post-Frame',
       description:
@@ -65,6 +94,35 @@ export const projects: Record<Locale, Project[]> = {
     },
   ],
   en: [
+    {
+      name: 'Truck Manager',
+      tagline: 'Management system for heavy-vehicle workshops',
+      description:
+        'Demo of a complete system for truck and fleet workshops: dashboard with sales and margins, clients and vehicles, kanban work orders, PDF estimates and invoices, inventory, technicians and role-based access control. Runs without a backend using fictional data.',
+      url: 'https://truck-manager-demo.web.app',
+      urlLabel: 'the live demo',
+      badge: 'DEMO',
+      image: '/img/truck-manager-screenshot.png',
+      imageBg: '#FFFFFF',
+      technologies: [
+        'Flutter',
+        'Dart',
+        'Riverpod',
+        'GoRouter',
+        'Supabase',
+        'PDF',
+        'fl_chart',
+        'Firebase',
+      ],
+      highlights: [
+        'Dashboard with sales, expenses, margin and charts',
+        'Clients, fleets and kanban work orders',
+        'PDF estimates and invoices',
+        'Inventory, technicians and access control',
+        'Backend-free demo with fictional data',
+      ],
+      live: true,
+    },
     {
       name: 'PoleBarns CRM',
       tagline: 'CRM + ERP for Post-Frame construction',
