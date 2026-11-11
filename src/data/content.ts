@@ -1,54 +1,11 @@
 import type { Locale } from '../i18n/ui';
 
-export interface Service {
-  icon: 'mobile' | 'qa' | 'pm';
-  title: string;
-  desc: string;
-}
-
 export interface Job {
   period: string;
   role: string;
   company: string;
   bullets: string[];
 }
-
-export const services: Record<Locale, Service[]> = {
-  es: [
-    {
-      icon: 'mobile',
-      title: 'Desarrollo Mobile',
-      desc: 'Apps Android, iOS y PWA con Flutter + Dart. Backend con Supabase o Firebase, autenticación y publicación en tiendas.',
-    },
-    {
-      icon: 'qa',
-      title: 'QA y Testing',
-      desc: 'Casos de prueba funcionales, regresión, integración y UI/UX. Control de calidad end-to-end con reportes en Trello.',
-    },
-    {
-      icon: 'pm',
-      title: 'Gestión de Proyectos',
-      desc: 'Planificación ágil, coordinación de equipos remotos y comunicación estructurada para entregas predecibles y sin fricción.',
-    },
-  ],
-  en: [
-    {
-      icon: 'mobile',
-      title: 'Mobile Development',
-      desc: 'Android, iOS and PWA apps with Flutter + Dart. Supabase or Firebase backend, authentication and store publishing.',
-    },
-    {
-      icon: 'qa',
-      title: 'QA & Testing',
-      desc: 'Functional, regression, integration and UI/UX test cases. End-to-end quality control with Trello reports.',
-    },
-    {
-      icon: 'pm',
-      title: 'Project Management',
-      desc: 'Agile planning, remote team coordination and structured communication for predictable, frictionless deliveries.',
-    },
-  ],
-};
 
 export const experience: Record<Locale, Job[]> = {
   es: [
