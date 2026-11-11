@@ -14,10 +14,10 @@ export const ui = {
     'hero.name': 'Luis Alberto Acosta Jiménez',
     'hero.title': 'Desarrollador de Software',
     'hero.shortBio':
-      'Desarrollador de software especializado en Flutter. Construyo apps web y móviles a la medida, estables y listas para producción.',
+      'Ayudo a empresas a digitalizar sus operaciones con software que se adapta 100% a la forma en que trabajan.',
     'hero.tagline': 'Desarrollador Mobile • QA • Gestión de proyectos',
     'hero.bio':
-      'Ayudo a empresas, startups y emprendedores a transformar sus ideas en aplicaciones móviles y web (PWA) funcionales, escalables y listas para producción en tiempos récord.',
+      'Como desarrollador y gestor de proyectos, me encargo del ciclo completo: diseño e implemento aplicaciones web y móviles a medida, listas para producción y enfocadas en resolver las necesidades reales de tu negocio.',
     'hero.cta': 'Contacto',
 
     'about.title': 'Sobre mí',
@@ -63,10 +63,10 @@ export const ui = {
     'hero.name': 'Luis Alberto Acosta Jiménez',
     'hero.title': 'Software Developer',
     'hero.shortBio':
-      'Software developer specialized in Flutter. I build custom web and mobile apps that are stable and production-ready.',
+      'I help companies digitize their operations with software that adapts 100% to the way they work.',
     'hero.tagline': 'Mobile Developer • QA • Project Management',
     'hero.bio':
-      'I help companies, startups and entrepreneurs turn their ideas into functional, scalable, production-ready mobile and web (PWA) apps in record time.',
+      'As a developer and project manager, I handle the full cycle: I design and build custom web and mobile applications, production-ready and focused on solving real business needs.',
     'hero.cta': 'Contact',
 
     'about.title': 'About me',

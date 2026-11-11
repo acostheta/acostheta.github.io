@@ -11,8 +11,8 @@ const { lang } = Astro.props;
 
 <section id="main" class="border-b border-white/10 bg-ink text-white">
   <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-14">
-    <div class="grid items-center gap-10 md:grid-cols-2 md:gap-12">
-      <div class="flex flex-col items-center text-center">
+    <div class="grid gap-10 md:grid-cols-5 md:items-start md:gap-12">
+      <div class="flex flex-col items-center text-center sm:items-start sm:text-left md:col-span-3">
         <img
           src="/img/afoto.jpg"
           alt={t(lang, 'hero.name')}
@@ -24,11 +24,15 @@ const { lang } = Astro.props;
           {t(lang, 'hero.name')}
         </h1>
         <p class="mt-1 text-lg font-light text-royal sm:text-xl">{t(lang, 'hero.title')}</p>
+
+        <div class="mt-6 max-w-xl space-y-3 text-[15px] leading-relaxed text-cloud/80">
+          <p class="text-base font-medium text-cloud">{t(lang, 'hero.shortBio')}</p>
+          <p>{t(lang, 'hero.bio')}</p>
+        </div>
       </div>
 
-      <div>
-        <p class="text-[15px] leading-relaxed text-cloud/80">{t(lang, 'hero.shortBio')}</p>
-        <dl class="mt-6 space-y-3">
+      <div class="md:col-span-2">
+        <dl class="space-y-3">
           {
             techStack[lang].map((group) => (
               <div>
