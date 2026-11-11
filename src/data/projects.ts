@@ -20,7 +20,7 @@ export const projects: Record<Locale, Project[]> = {
       name: 'Truck Manager',
       tagline: 'Sistema de gestión para talleres de vehículos pesados',
       description:
-        'El taller de camiones y flotas usaba una plataforma externa de pago y me encargaron una hecha a su medida. Hoy tiene su propio software que centraliza órdenes de trabajo, facturas e inventario, sin mensualidades. Hecho en Flutter con Riverpod y Supabase; la versión pública es una demo con datos ficticios.',
+        'Un taller de vehículos pesados pagaba mes a mes una plataforma de terceros que no terminaba de encajar y no dejaba de subir de precio. Construimos Truck Manager y ahora tienen su propio sistema, adaptado a su operación, que reúne órdenes de trabajo, facturación, inventario, clientes y control de accesos en un solo lugar; nunca más pagaron una mensualidad. En cuanto a la implementación, es una app Flutter Web y Móvil para ser consultada en cualquier dispositivo. Lo que verás es una réplica en forma de demo, sin datos reales.',
       url: 'https://truck-manager-demo.web.app',
       urlLabel: 'la demo',
       badge: 'DEMO',
@@ -49,7 +49,7 @@ export const projects: Record<Locale, Project[]> = {
       name: 'PoleBarns CRM',
       tagline: 'CRM + ERP para construcción de estructuras Post-Frame',
       description:
-        'El mismo caso: usaban una plataforma de pago y construyeron la suya propia. Además, gestionaban proyectos, facturas y nómina en plataformas distintas; ahora lo tienen todo en una sola app. Hecho en Flutter con Riverpod y Supabase, organizado como monorepo con Melos.',
+        'Una constructora de caballerizas (estructuras post-frame) pagaba una plataforma para gestionar sus proyectos, otra para facturar y otra para nómina: tres pagos diferentes todos los meses. Construimos PoleBarns y ahora tienen un CRM/ERP hecho a medida: cálculo de materiales para estimación, invoicing, seguimiento del progreso en tiempo real, registro de pago de nómina y destajos; todo en un solo lugar. A nivel técnico, está hecho en Flutter para ser accesible en multiplataforma: web para los dueños y contadores en oficina, y apps Android e iOS para los trabajadores en campo.',
       url: 'https://polebarns-crm-demo.web.app',
       urlLabel: 'la demo',
       badge: 'DEMO',
@@ -77,7 +77,7 @@ export const projects: Record<Locale, Project[]> = {
       name: 'Literudo',
       tagline: 'Blog y galería de la Agrupación Estudiantil Literudo',
       description:
-        'Literudo es una agrupación estudiantil recién creada que quería darse a conocer en la universidad y mostrarse como un espacio para promover la literatura: un poco de arte en una universidad científica. El blog es el punto de encuentro donde los escritores muestran su talento. Hecho con Next.js, React y Supabase (auth y base de datos con RLS).',
+        'Literudo es una agrupación estudiantil nueva que quería darse a conocer en la Universidad de Oriente y mostrarse como un espacio para promover la literatura en el campus. Así nació Literudo Online: un blog donde los escritores publican y muestran su talento, con cuentas, comentarios, reacciones y un panel de administración con moderación. En cuanto a su arquitectura, está hecho con Next.js y React (TypeScript), y Supabase para autenticación y base de datos. Cuenta con un backoffice donde los autores publican sus escritos y reciben comentarios y reacciones que, al aprobarse por la editorial, se publican en la página principal.',
       url: 'https://literudo.online',
       urlLabel: 'literudo.online',
       image: '/img/literudo-screenshot.png',
@@ -98,7 +98,7 @@ export const projects: Record<Locale, Project[]> = {
       name: 'Truck Manager',
       tagline: 'Management system for heavy-vehicle workshops',
       description:
-        'The truck and fleet workshop used a paid third-party platform and asked me to build one tailored to them. Today they have their own software that centralizes work orders, invoices and inventory, with no monthly fees. Built with Flutter, Riverpod and Supabase; the public version is a demo with fictional data.',
+        'A heavy-vehicle workshop was paying a third-party platform month after month; it never quite fit and the price kept going up. We built Truck Manager and now they have their own system, tailored to their operation, that brings together work orders, invoicing, inventory, clients and access control in one place—they never paid a monthly fee again. On the implementation side, it is a Flutter Web and Mobile app built to be used on any device. What you see here is a demo replica with no real data.',
       url: 'https://truck-manager-demo.web.app',
       urlLabel: 'the live demo',
       badge: 'DEMO',
@@ -127,7 +127,7 @@ export const projects: Record<Locale, Project[]> = {
       name: 'PoleBarns CRM',
       tagline: 'CRM + ERP for Post-Frame construction',
       description:
-        'Same story: they used a paid platform and built their own. On top of that, they managed projects, invoices and payroll across separate tools; now it is all in one app. Built with Flutter, Riverpod and Supabase in a Melos monorepo.',
+        'A barn construction company (post-frame structures) was paying for one platform to manage its projects, another to invoice and another for payroll: three different payments every month. We built PoleBarns and now they have a custom CRM/ERP: material estimation, invoicing, real-time progress tracking, payroll and piece-rate payments—all in one place. On the technical side, it is built in Flutter to be cross-platform: web for owners and accountants in the office, and Android and iOS apps for field workers.',
       url: 'https://polebarns-crm-demo.web.app',
       urlLabel: 'the live demo',
       badge: 'DEMO',
@@ -155,7 +155,7 @@ export const projects: Record<Locale, Project[]> = {
       name: 'Literudo',
       tagline: 'Blog and gallery of the Literudo Student Group',
       description:
-        'Literudo is a newly formed student group that wanted to make itself known at the university and present itself as a space to promote literature: a bit of art in a science-driven university. The blog is where writers meet to showcase their talent. Built with Next.js, React and Supabase (auth and database with RLS).',
+        'Literudo is a new student group that wanted to make itself known at the Universidad de Oriente and present itself as a space to promote literature on campus. That is how Literudo Online was born: a blog where writers publish and showcase their talent, with accounts, comments, reactions and an admin panel with moderation. In terms of architecture, it is built with Next.js and React (TypeScript), and Supabase for authentication and database. It has a backoffice where authors publish their writings and receive comments and reactions that, once approved by the editorial team, are published on the main page.',
       url: 'https://literudo.online',
       urlLabel: 'literudo.online',
       image: '/img/literudo-screenshot.png',
