@@ -12,7 +12,7 @@ export const ui = {
     'nav.contact': 'Contacto',
 
     'hero.name': 'Luis Alberto Acosta Jiménez',
-    'hero.title': 'Servicios de TI',
+    'hero.title': 'Desarrollador de Software',
     'hero.tagline': 'Desarrollador Mobile • QA • Gestión de proyectos',
     'hero.bio':
       'Ayudo a empresas, startups y emprendedores a transformar sus ideas en aplicaciones móviles y web (PWA) funcionales, escalables y listas para producción en tiempos récord.',
@@ -59,7 +59,7 @@ export const ui = {
     'nav.contact': 'Contact',
 
     'hero.name': 'Luis Alberto Acosta Jiménez',
-    'hero.title': 'IT Services',
+    'hero.title': 'Software Developer',
     'hero.tagline': 'Mobile Developer • QA • Project Management',
     'hero.bio':
       'I help companies, startups and entrepreneurs turn their ideas into functional, scalable, production-ready mobile and web (PWA) apps in record time.',
