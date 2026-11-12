@@ -10,6 +10,7 @@ const { lang } = Astro.props;
 
 const FORM_ENDPOINT = 'https://formspree.io/f/xvzenarj';
 const EMAIL = 'acostheta.dev@gmail.com';
+const WHATSAPP = 'https://wa.link/tbyo1j';
 
 const fieldClass =
   'w-full border border-white/40 bg-transparent px-4 py-3 text-white placeholder-white/60 transition-colors focus:border-white focus:outline-none';
@@ -79,6 +80,16 @@ const fieldClass =
         <h3 class="mb-2 mt-8 font-bold">{t(lang, 'contact.email.me')}</h3>
         <a href={`mailto:${EMAIL}`} class="text-white underline underline-offset-4 hover:text-ink">
           {EMAIL}
+        </a>
+
+        <h3 class="mb-2 mt-8 font-bold">{t(lang, 'contact.whatsapp.me')}</h3>
+        <a
+          href={WHATSAPP}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-white underline underline-offset-4 hover:text-ink"
+        >
+          {t(lang, 'contact.whatsapp')}
         </a>
 
         <p class="mt-8 text-sm text-white/70">{t(lang, 'contact.location')}</p>
