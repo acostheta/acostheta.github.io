@@ -1,6 +1,7 @@
 ---
 import { techStack } from '../data/content';
 import { t, type Locale } from '../i18n/ui';
+import WhatsAppButton from './WhatsAppButton.astro';
 
 interface Props {
   lang: Locale;
@@ -32,6 +33,16 @@ const { lang } = Astro.props;
         <div class="mt-6 max-w-xl space-y-3 text-[15px] leading-relaxed text-cloud/80">
           <p class="text-base font-medium text-cloud">{t(lang, 'hero.shortBio')}</p>
           <p>{t(lang, 'hero.bio')}</p>
+        </div>
+
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <WhatsAppButton lang={lang} />
+          <a
+            href="#portfolio"
+            class="inline-flex items-center justify-center border border-white/30 px-7 py-3 text-sm font-bold uppercase tracking-widest text-cloud transition-colors hover:border-white hover:bg-white/10"
+          >
+            {t(lang, 'nav.portfolio')}
+          </a>
         </div>
       </div>
 

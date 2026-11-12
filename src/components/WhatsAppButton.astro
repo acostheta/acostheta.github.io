@@ -1,0 +1,33 @@
+---
+import { t, type Locale } from '../i18n/ui';
+import { WHATSAPP_URL, WHATSAPP_ICON } from '../data/whatsapp';
+
+interface Props {
+  lang: Locale;
+  variant?: 'solid' | 'outline';
+  class?: string;
+}
+
+const { lang, variant = 'solid', class: className = '' } = Astro.props;
+
+const styles =
+  variant === 'solid'
+    ? 'border-white bg-white text-ink hover:bg-transparent hover:text-white'
+    : 'border-white/40 text-white hover:border-white hover:bg-white/10';
+---
+
+<a
+  href={WHATSAPP_URL}
+  target="_blank"
+  rel="noopener noreferrer"
+  class:list={[
+    'inline-flex items-center justify-center gap-2.5 border px-7 py-3 text-sm font-bold uppercase tracking-widest transition-colors',
+    styles,
+    className,
+  ]}
+>
+  <svg viewBox="0 0 24 24" class="h-5 w-5 shrink-0" fill="currentColor" aria-hidden="true">
+    <path d={WHATSAPP_ICON} />
+  </svg>
+  {t(lang, 'cta.whatsapp')}
+</a>
