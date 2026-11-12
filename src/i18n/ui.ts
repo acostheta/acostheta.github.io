@@ -20,6 +20,7 @@ export const ui = {
       'Como desarrollador y gestor de proyectos, me encargo del ciclo completo: diseño e implemento aplicaciones web y móviles a medida, listas para producción y enfocadas en resolver las necesidades reales de tu negocio.',
     'hero.cta': 'Contacto',
     'cta.whatsapp': 'Hablemos por WhatsApp',
+    'cta.email': 'Hablemos por mail',
 
     'about.title': 'Sobre mí',
     'about.body1':
@@ -50,7 +51,6 @@ export const ui = {
     'contact.error': 'Error al enviar. Intenta de nuevo.',
     'contact.social': 'o encuéntrame en',
     'contact.email.me': 'o escríbeme a',
-    'contact.whatsapp.me': 'o escríbeme por WhatsApp',
     'contact.location': 'Maturín, Monagas, Venezuela',
 
     'footer.note': 'Hecho con cariño por',
@@ -71,6 +71,7 @@ export const ui = {
       'As a developer and project manager, I handle the full cycle: I design and build custom web and mobile applications, production-ready and focused on solving real business needs.',
     'hero.cta': 'Contact',
     'cta.whatsapp': "Let's talk on WhatsApp",
+    'cta.email': "Let's talk by email",
 
     'about.title': 'About me',
     'about.body1':
@@ -101,7 +102,6 @@ export const ui = {
     'contact.error': 'Failed to send. Please try again.',
     'contact.social': 'or find me on',
     'contact.email.me': 'or email me at',
-    'contact.whatsapp.me': 'or message me on WhatsApp',
     'contact.location': 'Maturín, Monagas, Venezuela',
 
     'footer.note': 'Made with love by',

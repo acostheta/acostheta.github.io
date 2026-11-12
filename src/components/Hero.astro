@@ -35,13 +35,13 @@ const { lang } = Astro.props;
           <p>{t(lang, 'hero.bio')}</p>
         </div>
 
-        <div class="mt-6 flex flex-wrap items-center gap-3">
+        <div class="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
           <WhatsAppButton lang={lang} />
           <a
-            href="#portfolio"
+            href="#contact"
             class="inline-flex items-center justify-center border border-white/30 px-7 py-3 text-sm font-bold uppercase tracking-widest text-cloud transition-colors hover:border-white hover:bg-white/10"
           >
-            {t(lang, 'nav.portfolio')}
+            {t(lang, 'cta.email')}
           </a>
         </div>
       </div>
